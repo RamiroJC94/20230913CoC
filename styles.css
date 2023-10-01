@@ -48,40 +48,6 @@ body{
     padding-bottom: 1%;
 }
 
-/* .plan-body1 {
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
-} */
-
-/* .plan-body2 {
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    background: linear-gradient(180deg, #159A9C 0%, #002333 100%);
-} */
-
-/* .plan-body3 {
-    margin: 10px;
-    width: 100px;
-    height: 30px;
-    font-size: 10px;
-    border-radius: 8px;
-    background: linear-gradient(345deg, rgb(0,35,51) 0%, rgb(21,154,156) 33%, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0) 100%) 99% 50% / 400% 400%;
-    border: 2px solid transparent;
-    transition: all 0.5s ease 0s !important;
-    color: rgb(255, 255, 255);
-} */
-
-/* .plan-body3:hover {
-    border-radius: 8px;
-    background-position: 1% 50%;
-    border: 2px solid rgb(21,154,156);
-    transition: all 0.5s ease 0s !important;
-    color: #B4BEC9;
-} */
-
 /* CSS CARDS */
 .container{
     display: flex;
