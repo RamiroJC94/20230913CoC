@@ -1,0 +1,548 @@
+*{
+    --primario:rgba(21, 154, 156,1);
+    --Secundario:rgba(0,35,51,1);
+    --Terciario: rgba(180, 190, 201,1);
+    /* background-color: rgba(var(--mi-color-rgba), 0.8); */
+    /* reemplazo */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* https://midu.dev/que-es-y-para-que-sirve-box-sizing-border-box/ */
+}
+
+body{
+    margin: 0px;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav{
+    padding: 20px;
+    width: 100vw;
+    background: var(--Secundario);
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logotipo{
+    margin-left: 90px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: var(--primario);
+    font-size: 40px;
+}
+
+header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
+}
+
+header nav a{
+    margin-right: 20px;
+    color: var(--primario);
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: var(--Terciario);
+}
+
+header nav a.activo{
+    color: var(--Terciario);;
+}
+
+header nav .btt-suscribe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 237px;
+    height: 40px;
+}
+
+header nav .btt-suscribe a{
+    margin: 0px;
+    color: var(--Terciario);
+}
+
+header nav .btt-suscribe a:hover{
+    margin: 0px;
+    color: var(--Terciario);
+}
+
+.loggin{
+    margin-right: 10px;
+    color: var(--Terciario);
+}
+
+.promos{
+    padding: 2px;
+    color: var(--Terciario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(202deg, var(--Secundario) 49%, var(--primario) 100%);
+}
+
+.title{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.box{
+    width: 350px;
+    height: 190px;
+    position: absolute;
+    border-radius: 8px;
+    inset: 0;
+    left: 41%;
+    top: 70%;
+}
+
+.box .btt-suscribe{
+    width: 140px;
+    font-size: 14px;
+    text-transform: uppercase;
+    left: 27% !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .box {
+      left: 41vw;
+      top: 67vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .display{
+        height: 335px !important;
+    }
+
+    .card{
+        height: 120px !important;
+    }
+
+    .box{
+        width: 240px;
+        height: 190px;
+        left: 35%;
+        top: 26%;
+    }
+
+    .CardSub02{
+        position: absolute;
+        z-index: 1;
+        color: var(--Terciario);
+        font-weight: bold;
+        transition: 0.5s;
+        text-transform: uppercase;
+        
+        top: 6% !important;
+        left: 12% !important;
+        font-size: 24px !important;
+    }
+
+    .CardSubPrice002{
+        position: absolute;
+        z-index: 1;
+        color: var(--Terciario);
+        font-weight: bold;
+        transition: 0.5s;
+        text-transform: uppercase;
+        
+        top: 26% !important;
+        left: 14% !important;
+        font-size: 20px !important;
+    }
+
+    .CardSubMes2{
+        position: absolute;
+        z-index: 1;
+        color: var(--Terciario);
+        font-weight: bold;
+        transition: 0.5s;
+        text-transform: uppercase;
+        
+        top: 44% !important;
+        left: 11% !important;
+        font-size: 12px !important;
+    }
+
+    .linesBoxLg{
+        width: 190px;
+        height: 120px;
+    }
+
+    .CardSub0{
+        top: 6%  !important;
+        left: 16% !important;
+        font-size: 24px !important;
+    }
+
+    .CardSub00{
+        top: 6%  !important;
+        left: 16% !important;
+        font-size: 24px !important;
+    }
+
+    .CardSubPrice00{
+        top: 28%  !important;
+        left: 12% !important;
+        font-size: 20px !important;
+    }
+
+    .CardSubPrice0{
+        top: 34%  !important;
+        left: 13% !important;
+        font-size: 20px !important;
+    }
+
+    .CardSubMes{
+        top: 50%  !important;
+        left: 6% !important;
+        font-size: 12px !important;
+        color: var(--Terciario);
+    }
+    
+    .btt-suscribe{
+        top: 58%  !important;
+        left: 9% !important;
+    }
+
+    .container{
+        height: 600px !important;
+        gap: 70px !important;
+        justify-content: none !important;
+        left: 14% !important;
+    }
+
+    .linesBoxSm{
+        height: 37px !important;
+        left: 28% !important;
+        font-size: 11px !important;
+        top: -15% !important;
+    }
+
+    .card + .especial{
+        width: 190px !important;
+        height: 120px !important;
+        left: -81px !important;
+    }
+    
+    .card + .especial .linesBoxLg{
+        height: 140px  !important;
+    }
+    
+    .card + .especial .linesBoxSm{
+        left: 50% !important;
+    }
+    
+    .card + .especial .CardSub00{
+        top: 20% !important;
+        left: 20% !important;
+    }
+    
+    .card + .especial .CardSubPrice00{
+        top: 44% !important;
+        left: 20% !important;
+    }
+    
+    .card + .especial .CardSubMes{
+        top: 66% !important;
+        left: 10% !important;
+    }
+    
+    .card + .especial .btt-suscribe{
+        top: 76% !important;
+        left: 16% !important;
+    }
+}
+
+.display{
+    /* height: 1036.560px; */
+    height: 96vh;
+}
+
+.display img{
+    height: 96vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* CSS CARDS */
+.container{
+    display: flex;
+    position: relative;
+    padding: 80px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.card{
+    /* Los tamaños tienen que ir en la parte responsive sino hace cagada */
+    position: relative;
+    border-radius: 8px;
+    width: 350px;
+    /* width: 36vw; Desktop */
+    /* width: 81vw; celular*/
+    height: 190px;
+    /* height: 19vh; Desktop */
+    /* height: 1vh; Celular */
+    transition: 0.5s;
+}
+
+.card:hover{
+    height: 250px;
+}
+
+.card:has(p){
+    text-transform: uppercase;
+}
+
+.card .linesBoxLg{
+    position: absolute;
+    border-radius: 8px;
+    inset: 0;
+    background: var(--Secundario);
+    overflow: hidden;
+}
+
+.card .linesBoxLg::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent,var(--primario),var(--primario),var(--primario), transparent);
+    animation: animate 4s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .linesBoxLg::before{
+    animation-play-state: running;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+.card .linesBoxLg::after{
+    content: '';
+    position: absolute;
+    border-radius: 8px;
+    inset: 3px;
+    background: linear-gradient(180deg, var(--primario) 0%, var(--Secundario) 100%);
+}
+
+.card .linesBoxSm{
+    position: absolute;
+    border-radius: 8px;
+    top: -40px;
+    left: 50%;
+    width: 150px;
+    height: 80px;
+    transform: translateX(-50%);
+    background: var(--Secundario);
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .linesBoxSm{ /*Tamaño Card:hover linesBoxSm*/
+    /* top: 25px; */
+    /* width: 250px; */
+    /* height: 250px; */
+}
+
+.card .linesBoxSm::before{   /*gradient*/
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 70px;   /*largo linea*/
+    transform: translate(-50%,-50%);
+    background: linear-gradient(transparent,var(--Terciario),var(--Terciario),var(--Terciario), transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .linesBoxSm::before{
+    animation-play-state: running;
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+
+.card .linesBoxSm::after{
+    border-radius: 8px;
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: linear-gradient(180deg, var(--primario) 0%, var(--Secundario) 100%);
+}
+
+.card .linesBoxSm p{
+    position: absolute;
+    font-size: 86%;
+    z-index: 1;
+    color: var(--Terciario);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.card:hover .linesBoxSm p{
+    color: rgba(180,190,201,0.5);
+}
+
+.card .CardSub00{
+    top: 25%;
+    left: 32%;
+    position: absolute;
+    font-size: 30px;
+    z-index: 1;
+    color: var(--Terciario);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.card .CardSub0{
+    top: 25%;
+    left: 38%;
+    position: absolute;
+    font-size: 30px;
+    z-index: 1;
+    color: var(--Terciario);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.card .CardSubPrice00{
+    top: 45%;
+    left: 37%;
+    position: absolute;
+    font-size: 20px;
+    z-index: 1;
+    color: var(--Terciario);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.card .CardSubPrice0{
+    top: 45%;
+    left: 38%;
+    position: absolute;
+    font-size: 20px;
+    z-index: 1;
+    color: var(--Terciario);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.CardSub02{
+    position: absolute;
+    z-index: 1;
+    color: var(--Terciario);
+    font-weight: bold;
+    transition: 0.5s;
+    text-transform: uppercase;
+    
+    top: 12% !important;
+    left: 30% !important;
+    font-size: 30px !important;
+}
+
+.CardSubPrice002{
+    position: absolute;
+    z-index: 1;
+    color: var(--Terciario);
+    font-weight: bold;
+    transition: 0.5s;
+    text-transform: uppercase;
+    
+    top: 38% !important;
+    left: 38% !important;
+    font-size: 20px !important;
+}
+
+.CardSubMes2{
+    position: absolute;
+    z-index: 1;
+    color: var(--Terciario);
+    transition: 0.5s;
+    text-transform: uppercase;
+    
+    top: 58% !important;
+    left: 30% !important;
+}
+
+.card button{
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s;
+    top: 70%;
+    left: 34%;
+}
+
+.btt-suscribe{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    border-radius: 8px;
+    background: linear-gradient(345deg, rgb(0,35,51) 0%, rgb(21,154,156) 33%, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0) 100%) 99% 50% / 400% 400%;
+    border: 2px solid rgba(0,35,51,0.7);
+    transition: all 0.5s ease 0s !important;
+    color: rgb(255, 255, 255);
+}
+
+.btt-suscribe:hover{
+    border-radius: 8px;
+    background-position: 1% 50%;
+    border: 2px solid rgb(21,154,156);
+    transition: all 0.5s ease 0s !important;
+    color: #B4BEC9;
+}
+
+.CardSubMes{
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s;
+    top: 60%;
+    left: 24%; 
+}
+/* CARDS */
+
