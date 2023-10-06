@@ -48,11 +48,7 @@ git push origin main:Javier
 
 git push origin main:Liliana
 
-
-
-Para mas informacion visitar:
-https://phoenixnap.com/kb/git-push-to-remote-branch
-
+------------------------------------
 
 Para Pushear a Remoto Principal (¡SOLO PARA MERGE!)(no usar como branch normal)
 
@@ -73,3 +69,33 @@ git push origin -d master (proximoa a eliminar)
 Eliminar Branch local
 
 git branch -d branch-name
+
+------------------------------------
+
+Para mas informacion visitar:
+https://phoenixnap.com/kb/git-push-to-remote-branch
+
+https://www.freecodecamp.org/espanol/news/git-fetch-vs-pull-cual-es-la-diferencia-entre-los-comandos-git-fetch-y-git-pull/
+
+https://www.freecodecamp.org/news/git-delete-remote-branch/#:~:text=To%20completely%20remove%20a%20remote,origin%20%2Dd%20branch%2Dname%20.
+
+
+------------------------------------
+
+
+Deploy en Netlify es Automatico en caso de querer forzar:
+
+https://app.netlify.com/sites/transcendent-longma-402ea7/deploys
+
+click en uno de los deploys anteriores,
+Options, Retri with last branch commit.
+
+
+Para Saber si el Deploy esta al dia:
+
+https://app.netlify.com/sites/transcendent-longma-402ea7/deploys
+
+Revisar que el ultimo commit corresponda con el de github main:
+
+main@<Commit>
+main@27dba29
