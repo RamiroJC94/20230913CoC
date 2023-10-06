@@ -17,6 +17,7 @@ body{
 */
 background: rgb(180,190,201);
 background: linear-gradient(343deg, rgba(180,190,201,1) 30%, rgba(21,154,156,1) 64%);
+font-family: Montserrat, sans-serif;
 }
 
 .form-register{
@@ -25,13 +26,15 @@ background: linear-gradient(343deg, rgba(180,190,201,1) 30%, rgba(21,154,156,1) 
     padding: 30px;
     margin: auto;
     margin-top: 100px;
+    margin-bottom: 55px;
     border-radius: 4px;
     color: var(--Terciario);
     box-shadow: 7px 13px 37px var(--Secundario);
 }
 
 .form-register h4{
-    font-size: 22px;
+    text-align: center;
+    font-size: 26px;
     margin-bottom: 20px;
     color: var(--Terciario);
 }
@@ -39,7 +42,7 @@ background: linear-gradient(343deg, rgba(180,190,201,1) 30%, rgba(21,154,156,1) 
 .controls{
     width: 100%;
     padding: 10px;
-    margin: 10px;
+    margin: 0 auto;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid var(--Terciario);
@@ -49,7 +52,7 @@ background: linear-gradient(343deg, rgba(180,190,201,1) 30%, rgba(21,154,156,1) 
 .form-register p{
     height: 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .form-register a{
@@ -62,15 +65,18 @@ background: linear-gradient(343deg, rgba(180,190,201,1) 30%, rgba(21,154,156,1) 
 }
 
 .btt-suscribe{
-    margin: 10px;
-    width: 100px;
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 30px;
-    font-size: 10px;
     border-radius: 8px;
     background: linear-gradient(345deg, rgb(0,35,51) 0%, rgb(21,154,156) 33%, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0) 100%) 99% 50% / 400% 400%;
     border: 2px solid rgba(0,35,51,0.7);
     transition: all 0.5s ease 0s !important;
     color: rgb(255, 255, 255);
+    font-size: 18px;
 }
 
 .btt-suscribe:hover{
