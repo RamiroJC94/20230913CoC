@@ -56,7 +56,14 @@ git add .
 git commit -m ""
 git push -u origin main
 
+-----------------------
+ejmplo Javier pushear en repositorio remoto
 
+git add .
+git commit -m ""
+git push origin master:Javier
+
+------------------------------
 
 Eliminar Branch Remoto (Cuidado con este comando, preguntar antes de usar)
 
