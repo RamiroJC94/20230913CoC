@@ -11,6 +11,12 @@ git remote add origin <remote_url>
 
 
 
+Visualizar Branchs remote_repository
+
+git branch -a
+
+
+
 Para ver los branch locales
 
 git branch
@@ -27,7 +33,14 @@ Para Pushear desde un branch local con nombre diferente al un branch remoto
 
 git push <remote_repository> <local_branch>:<remote_branch> 
 
+Por Ejemplo:
 git push origin main:Ramiro
+
+git push origin main:Carina
+
+git push origin main:Javier
+
+git push origin main:Liliana
 
 
 
@@ -40,3 +53,14 @@ Para Pushear a Remoto Principal (¡SOLO PARA MERGE!)(no usar como branch normal)
 git add .
 git commit -m ""
 git push -u origin main
+
+
+
+Eliminar Branch Remoto (Cuidado con este comando, preguntar antes de usar)
+
+git push origin -d branch-name
+
+
+Eliminar Branch local
+
+git branch -d branch-name
