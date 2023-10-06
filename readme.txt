@@ -44,7 +44,7 @@ git push origin main:Ramiro
 
 git push origin main:Carina
 
-git push origin main:Javier
+git push origin master:Javier
 
 git push origin main:Liliana
 
