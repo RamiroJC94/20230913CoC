@@ -1,0 +1,91 @@
+:root {
+    /* --fondo: #141414; */
+    --primario:rgba(21, 154, 156,1);
+    --Secundario:rgba(0,35,51,1);
+    --Terciario: rgba(180, 190, 201,1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html, body {   
+    /*background: rgb(0,35,51);
+    background: linear-gradient(155deg, rgba(0,35,51,1) 49%, rgba(21,154,156,1) 100%);
+*/
+background: rgb(180,190,201);
+background: linear-gradient(343deg, rgba(180,190,201,1) 30%, rgba(21,154,156,1) 64%);
+font-family: Montserrat, sans-serif;
+overflow: hidden;
+}
+
+.form-register{
+    width: 400px;
+    background: var(--Secundario);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 55px;
+    border-radius: 4px;
+    color: var(--Terciario);
+    box-shadow: 7px 13px 37px var(--Secundario);
+    height: 100px;
+}
+
+.form-register h4{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: var(--Terciario);
+}
+
+.controls{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid var(--Terciario);
+    font-size: 18px;
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.form-register a{
+    color:var(--Terciario);
+    text-decoration: underline;
+}
+
+.form-register a:hover{
+    color: var(--primario);
+}
+
+.btt-suscribe{
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 8px;
+    background: linear-gradient(345deg, rgb(0,35,51) 0%, rgb(21,154,156) 33%, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0) 100%) 99% 50% / 400% 400%;
+    border: 2px solid rgba(0,35,51,0.7);
+    transition: all 0.5s ease 0s !important;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.btt-suscribe:hover{
+    border-radius: 8px;
+    background-position: 1% 50%;
+    border: 2px solid rgb(21,154,156);
+    transition: all 0.5s ease 0s !important;
+    color: #B4BEC9;
+}
