@@ -1,0 +1,13 @@
+ramiro      desarrollo      index.html
+                            styles.css
+                            formulario.html
+                            estiloForm.css
+
+Carina      desarrollo      home.html
+                            PeliSeleccionada.html
+                            estilos.css
+
+javier      desarrollo      formulario.html
+                            login.html
+                            estiloForm.css
+                            estiloLogin.css

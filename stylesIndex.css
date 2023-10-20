@@ -124,6 +124,11 @@ header nav .btt-suscribe a:hover{
 
 @media only screen and (max-width: 600px){
 
+    header .logotipo{
+        margin-left: 0px;
+        font-size: 20px;
+    }
+
     .display{
         height: 335px !important;
     }
@@ -267,6 +272,7 @@ header nav .btt-suscribe a:hover{
         left: 16% !important;
     }
 }
+
 
 .display{
     /* height: 1036.560px; */

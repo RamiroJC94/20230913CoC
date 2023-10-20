@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estiloHome.css">
 
     <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,105 +16,116 @@
 </head>
 
 <body>
-    <header>
-        <div class="contenedor">
+    <div class="contenedor"> <!--Saque el contenedor de dentro del header-->
+        <header>
             <h2 class="logotipo">OnlyPelis</h2>
             <nav>
-                <a href="index.html" class="activo">Inicio</a>
-                <a href="#">Series</a>
-                <a href="PeliSelecionada.html">Películas</a>
+                <a href="#" class="activo">Inicio</a> <!--borre series, hacemos sólo pelis-->
+                <a href="#">Películas</a> <!--Modifique para que se seleccione desde el contenedor de pelis-->
                 <a href="#">Mi Lista</a>
                 <a href="#">Más Recientes</a>
             </nav>
-        </div>
-    </header>
-    <main>
-        <div class="pelicula-portada">
-            <div class="contenedor">
-                <h1 class="titulo">Fast & Furious X <br></h1>
-                <h4 class="subtitulo">El final del camino comienza.</h4>
-                <p class="descripcion"> Dom Toretto y su familia se convierten en el objetivo del vengativo hijo del
-                    capo de las drogas Hernán Reyes. </p>
-                <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-                <button role="button" class="boton"><i class="fas fa-plus fa-2xs"></i>Información</button>
+        </header>
 
+
+        <main>
+            <div class="pelicula-portada">
+                <div class="contenedor">
+                    <h1 class="titulo">Fast & Furious X <br></h1>
+                    <h4 class="subtitulo">El final del camino comienza.</h4>
+                    <p class="descripcion"> Dom Toretto y su familia se convierten en el objetivo del vengativo hijo del
+                        capo de las drogas Hernán Reyes. </p>
+                    <a class="boton" href="https://www.youtube.com/watch?v=cgHFwv1uMWE" ><i class="fas fa-plus fa-2xs"></i>Reproducir</a>
+                    <a id="info" class="boton" href="#" onclick=GetDescription("346698-barbie")><i class="fas fa-plus fa-2xs"></i>Información</a>
+
+                </div>
             </div>
-        </div>
 
-        <div class="peliculas-estreno contenedor">
-            <div class="contenedor-titulos-controles">
-                <h3>Películas de Estreno</h3>
-            </div>
-            <div class="contenedor-princ">
-                <button role="button" id="flecha-I" class="flecha-I"><i class="fas fa-angle-left"></i></button>
+            <div class="peliculas-estreno contenedor">
+                <div class="contenedor-titulos-controles">
+                    <h3>Películas de Estreno</h3>
+                </div>
+                <div class="contenedor-princ">
+                    <button role="button" id="flechaI" class="flechaI"><i class="fas fa-angle-left"></i></button>
 
-                <div class="contenedor-carousel">
-                    <div class="carousel">
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Elemental-min.jpeg" alt="Elemental"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/OperacionK-min.jpeg" alt="Operacion Kandahar"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Barbie-min.jpeg" alt="Barbie"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Indiana-min.jpeg" alt="Indiana Jones"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Sonido-min.jpeg" alt="Sonido de Libertad"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Transformers-min.jpeg" alt="Transformers"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Elemental-min.jpeg" alt="Elemental"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/OperacionK-min.jpeg" alt="Operacion Kandahar"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Barbie-min.jpeg" alt="Barbie"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Indiana-min.jpeg" alt="Indiana Jones"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Sonido-min.jpeg" alt="Sonido de Libertad"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Transformers-min.jpeg" alt="Transformers"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Elemental-min.jpeg" alt="Elemental"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/OperacionK-min.jpeg" alt="Operacion Kandahar"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Barbie-min.jpeg" alt="Barbie"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Indiana-min.jpeg" alt="Indiana Jones"></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"><img src="/src/Sonido-min.jpeg" alt="Sonido de Libertad"></a>
+                    <div class="contenedor-slider"> <!--Modifique nombre de carrusel a Slider-->
+                        <div class="slider">
+                            <div class="pelicula">
+                                <a href="PeliSelecionada.html"><img src="./src/AgenteStone-min.jpeg" alt="Agente Stone"></a>
+                            </div> <!--Modifique película para que pase a la peli seleccionada-->
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Fast&Furious.jpg" alt="Elemental"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Elemental-min.jpeg" alt="Elemental"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/OperacionK-min.jpeg" alt="Operacion Kandahar"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Barbie-min.jpeg" alt="Barbie"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Indiana-min.jpeg" alt="Indiana Jones"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Sonido-min.jpeg" alt="Sonido de Libertad"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Transformers-min.jpeg" alt="Transformers"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Elemental-min.jpeg" alt="Elemental"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/OperacionK-min.jpeg" alt="Operacion Kandahar"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Barbie-min.jpeg" alt="Barbie"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Indiana-min.jpeg" alt="Indiana Jones"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Sonido-min.jpeg" alt="Sonido de Libertad"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Transformers-min.jpeg" alt="Transformers"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Elemental-min.jpeg" alt="Elemental"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/OperacionK-min.jpeg" alt="Operacion Kandahar"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Barbie-min.jpeg" alt="Barbie"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Indiana-min.jpeg" alt="Indiana Jones"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/src/Sonido-min.jpeg" alt="Sonido de Libertad"></a>
+                            </div>
                         </div>
                     </div>
+
+                    <button role="button" id="flechaD" class="flechaD"><i class="fas fa-angle-right"></i></button>
                 </div>
-
-                <button role="button" id="flecha-D" class="flecha-D"><i class="fas fa-angle-right"></i></button>
             </div>
-        </div>
-    </main>
-    <!-- Faltan más contenedores con peliculas tipo carrusel-->
 
+            <div>
+
+            </div>
+        </main>
+        <!-- Faltan más contenedores con peliculas tipo slider-->
+    </div>
     <br><br>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <script src="../Js/main.js"></script>
+    <script src="main.js"></script>
+    <script src="api.js"></script>
 
-     <footer>
+    <footer>
         <p>Derechos Reservados de OnlyPelis 2023</p>
     </footer>
 </body>
