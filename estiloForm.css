@@ -63,6 +63,23 @@ font-family: Montserrat, sans-serif;
 .form-register a:hover{
     color: var(--primario);
 }
+.input-error{
+    border: 2px solid #EA2027;
+}
+
+.mensajeError{
+    color: #EA2027;
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.mensajeCorrecto{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
 
 .btt-suscribe{
     margin: 0 auto;
