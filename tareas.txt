@@ -5,11 +5,15 @@ ramiro      desarrollo      index.html
             modificaciones  estiloForm.css  correccion estilo general
             modificaciones  estilohome.css  correccion Responsive portada FastX
                                             correccion onclick GetMovie en boton info FastX
+            modificaciones  validacion.js   correccion de validacion y redireccion
+            modificaciones  login.js        correccion de validacion y redireccion
+            modificaciones  login.html      correccion input password
 
 
 Carina      desarrollo      home.html
                             PeliSeleccionada.html
                             estiloHome.css
+            modificaciones  home.html       correccion de imagenes y estilos
 
 javier      desarrollo      formulario.html
                             login.html

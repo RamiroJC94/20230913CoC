@@ -11,14 +11,13 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-html, body {   
+body{    
     /*background: rgb(0,35,51);
     background: linear-gradient(155deg, rgba(0,35,51,1) 49%, rgba(21,154,156,1) 100%);
 */
 background: rgb(180,190,201);
 background: linear-gradient(343deg, rgba(180,190,201,1) 30%, rgba(21,154,156,1) 64%);
 font-family: Montserrat, sans-serif;
-overflow: hidden;
 }
 
 .form-register{
@@ -31,7 +30,6 @@ overflow: hidden;
     border-radius: 4px;
     color: var(--Terciario);
     box-shadow: 7px 13px 37px var(--Secundario);
-    height: 100px;
 }
 
 .form-register h4{
@@ -43,7 +41,6 @@ overflow: hidden;
 
 .controls{
     width: 100%;
-    height: 100%;
     padding: 10px;
     margin: 0 auto;
     border-radius: 4px;
@@ -65,6 +62,20 @@ overflow: hidden;
 
 .form-register a:hover{
     color: var(--primario);
+}
+.input-error{
+    border: 2px solid #EA2027;
+}
+
+.mensajeError{
+    color: #EA2027;
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.mensajeCorrecto{
+    text-align: center;
+    font-weight: bold;
 }
 
 .btt-suscribe{
@@ -88,4 +99,10 @@ overflow: hidden;
     border: 2px solid rgb(21,154,156);
     transition: all 0.5s ease 0s !important;
     color: #B4BEC9;
+}
+
+/*estilo para el error con borde rojo para resaltar*/
+.input-error {
+    border: 2px solid #EA2027;
+    
 }

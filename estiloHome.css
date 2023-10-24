@@ -55,6 +55,11 @@ footer {
     font-size: 40px;
 }
 
+.contenedor header .logotipo a{
+    text-decoration: none;
+    color: var(--primario);
+}
+
 .contenedor header nav a {
     /*agregue contenedor*/
     color: var(--primario);

@@ -32,6 +32,7 @@ const Movies=[
 const GetMovie = async (idMovie) => {
     try{
         const resPost = await fetch(`https://api.themoviedb.org/3/movie/${idMovie}`, options)
+        console.log(resPost)
         const post = await resPost.json()
         state.overview=post.overview
         state.title=post.title
