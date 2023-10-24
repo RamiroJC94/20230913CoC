@@ -27,12 +27,16 @@ frmRegistro.addEventListener('submit', function (e) {
     if (nombre.value.trim() === '') {
         nombreError.textContent = 'El nombre es obligatorio';
         nombre.classList.add('input-error');
+    }else{
+      nombre.classList.remove('input-error');
     }
     
     // Validar apellido
     if (apellido.value.trim() === '') {
         apellidoError.textContent = 'El apellido es obligatorio';
         apellido.classList.add('input-error');
+    }else{
+      apellido.classList.remove('input-error');
     }
     
     // Validar correo
@@ -40,18 +44,29 @@ frmRegistro.addEventListener('submit', function (e) {
     if (!regexEmail.test(correo.value)) {
         correoError.textContent = 'El correo electrónico no es válido';
         correo.classList.add('input-error');
+    }else{
+      correo.classList.remove('input-error');
     }
     
     // Validar contraseña
     if (contraseña.value.length < 8) {
         contraseñaError.textContent = 'La contraseña debe tener al menos 8 caracteres';
         contraseña.classList.add('input-error');
+    }else{
+      contraseña.classList.remove('input-error');
     }
     
     // Validar repetir contraseña
     if (repetirContraseña.value !== contraseña.value) {
         repetirContraseñaError.textContent = 'Las contraseñas no coinciden';
         repetirContraseña.classList.add('input-error');
+        }else if (repetirContraseña.value == ''){ 
+          repetirContraseñaError.textContent = 'Debe repetir contraseña, no puede ser vacio';
+          repetirContraseña.classList.add('input-error');
+        
+
+    } else {
+      repetirContraseña.classList.remove('input-error');
     }
 
     
