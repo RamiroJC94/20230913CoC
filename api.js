@@ -1,5 +1,6 @@
 // Example
 // https://image.tmdb.org/t/p/original/4XM8DUTQb3lhLemJC51Jx4a2EuA.jpg
+//https://api.themoviedb.org/3/movie/385687-fast-x
 
 const state={
     title:"",
@@ -44,15 +45,21 @@ const GetMovie = async (idMovie) => {
 }
 
 const GetDescription = async (idMovie) => {
+    component=document.getElementsByClassName('popup')[0];
     try{
-            desc= await GetMovie(idMovie);
-            document.getElementById("info").insertAdjacentHTML("afterend", `
-            <div class="popup">
-                <h3>${state.title}</h3>
-                <p>${state.release_date}</p>
-                <p>${state.vote_average}</p>
-             </div>
-            `)
+            if(!document.getElementsByClassName('popup')[0]){
+                desc= await GetMovie(idMovie);
+                document.getElementById("info").insertAdjacentHTML("afterend", `
+                <div class="popup" style="display: flex;">
+                    <h3>Titulo: ${state.title}</h3>
+                    <p>Fecha de estreno: ${state.release_date}</p>
+                    <p>Calificacion: ${state.vote_average}</p>
+                    </div>
+                `)
+                console.log('create popup')
+            }else{
+                isVisible();
+            }
         }
 
     catch(error){
@@ -60,6 +67,11 @@ const GetDescription = async (idMovie) => {
     }
 }
 
+const isVisible = async () =>{
+                if (document.getElementsByClassName('popup')[0].style.display==='flex'){
+                    document.getElementsByClassName('popup')[0].style.display='none'
+                }else{
+                    document.getElementsByClassName('popup')[0].style.display='flex'
+                }
+}
 // GetMovie("385687-fast-x");
-
-

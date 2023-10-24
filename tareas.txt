@@ -1,13 +1,18 @@
 ramiro      desarrollo      index.html
-                            styles.css
-                            formulario.html
-                            estiloForm.css
+                            stylesIndex.css
+                            api.js
+            modificaciones  formulario.html correccion etiquetas general
+            modificaciones  estiloForm.css  correccion estilo general
+            modificaciones  estilohome.css  correccion Responsive portada FastX
+                                            correccion onclick GetMovie en boton info FastX
+
 
 Carina      desarrollo      home.html
                             PeliSeleccionada.html
-                            estilos.css
+                            estiloHome.css
 
 javier      desarrollo      formulario.html
                             login.html
                             estiloForm.css
                             estiloLogin.css
+            modificaciones  formulario.html  verificaciones input por js

@@ -77,6 +77,8 @@ footer {
     background-position: center center;
     background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(../src/fastx-min.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin-bottom: 3em;
     display: flex;
     align-items: end;
@@ -235,17 +237,32 @@ footer {
         font-size: 30px;
     }
 
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     header .contenedor {
         flex-direction: column;
         text-align: center;
     }
 
     .pelicula-portada {
-        font-size: 14px;
+        font-size: 8px;
+    }
+
+    .pelicula-portada .contenedor{
+        top: 5px;
     }
 
     .pelicula-portada .descripcion {
         max-width: 100%;
+    }
+
+    .pelicula-portada .subtitulo{
+        margin-top: 5px;
     }
 
     .peliculas-estreno .contenedor-slider {
@@ -262,6 +279,7 @@ footer {
     .peliculas-estreno .flechaD {
         display: none;
     }
+
 }
 
 /*------------------Película Seleccionada---------------*/
@@ -370,8 +388,96 @@ p.one {
 }
 
 /*responsive columnas*/
+@media screen and (max-width:2000px) {
+    .column {
+        width: 100%;
+    }
+    
+    .popup{
+        display: flex;
+        background-color: rgba(0, 35, 51, 0.7);
+        position: absolute;
+        z-index: 1;
+        /* top: 34%; */
+        left: min(380px,482px);
+        /* left: 26%; */
+        /* width: 20%; */
+        width: min(243px,278px);
+        /* justify-content: center;
+        align-items: flex-start; */
+        flex-direction: column;
+        height: 100px;
+        border-radius: 5px;
+        border: 2px solid rgba(0,35,51,1);
+    }
+
+    .popup h3{
+        margin: 5px !important;
+        padding: 0px !important;   
+    }
+
+    .popup p{
+        margin: 5px !important;
+        padding: 0px !important;   
+    }
+}
+
 @media screen and (max-width:1080px) {
     .column {
         width: 100%;
+    }
+
+    .popup{
+        display: flex;
+        background-color: rgba(0, 35, 51, 0.7);
+        position: absolute;
+        z-index: 1;
+        left: 23%;
+        width: 30%;
+        flex-direction: column;
+        height: 90px;
+        border-radius: 5px;
+        border: 2px solid rgba(0,35,51,1);
+
+    }
+
+    .popup h3{
+        margin: 5px !important;
+        padding: 0px !important;
+        font-size: 12px;
+    }
+
+    .popup p{
+        margin: 5px !important;
+        padding: 0px !important;
+        font-size: 15px;  
+    }
+}
+
+@media screen and (max-width:600px){
+    .popup{
+        display: flex;
+        background-color: rgba(21, 154, 156, 0.6);
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        width: 45%;
+        flex-direction: column;
+        height: 80px;
+        border-radius: 5px;
+        border: 2px solid rgba(180, 190, 201,0.6);
+    }
+    
+    .popup h3{
+        margin: 5px !important;
+        padding: 0px !important;
+        font-size: 15px;
+        color: var(--Secundario); 
+    }
+    
+    .popup p{
+        margin: 5px !important;
+        padding: 0px !important;   
+        font-size: 9px;
     }
 }
