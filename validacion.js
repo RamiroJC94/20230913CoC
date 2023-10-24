@@ -75,7 +75,7 @@ frmRegistro.addEventListener('submit', function (e) {
         return;
     }
     
-    // Si llegamos aquí, el formulario es válido
+    //el formulario es válido
     mensajeCorrecto.textContent = '¡Registrado Correctamente!';
     mensajeCorrecto.style.color = 'green';
 });
