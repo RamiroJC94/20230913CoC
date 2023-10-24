@@ -486,3 +486,45 @@ p.one {
         font-size: 9px;
     }
 }
+
+@media screen and (max-width:400px){
+    .fcc-btn{
+        font-size: 0.7em !important;
+    }
+
+    .contenedor .pelicula-seleccionada{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-height: 9.5em;
+    }
+
+    .column p{
+        text-align: left;
+    }
+
+    .popup{
+        display: flex;
+        background-color: rgba(21, 154, 156, 0.9);
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        width: 45%;
+        flex-direction: column;
+        height: 80px;
+        border-radius: 5px;
+        border: 2px solid rgba(180, 190, 201,0.6);
+    }
+    
+    .popup h3{
+        margin: 5px !important;
+        padding: 0px !important;
+        font-size: 11px;
+        color: var(--Secundario); 
+    }
+    
+    .popup p{
+        margin: 5px !important;
+        padding: 0px !important;   
+        font-size: 8px;
+    }
+}

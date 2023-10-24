@@ -1,6 +1,7 @@
 ramiro      desarrollo      index.html
                             stylesIndex.css
-                            api.js
+                            api.js          GetDescripcion Solicita informacion de la API peliculas themoviedb.org, la informacion se despliega del boton +informacion
+                                            en la pagina home.html & PeliSeleccionada.html
             modificaciones  formulario.html correccion etiquetas general
             modificaciones  estiloForm.css  correccion estilo general
             modificaciones  estilohome.css  correccion Responsive portada FastX
@@ -8,12 +9,16 @@ ramiro      desarrollo      index.html
             modificaciones  validacion.js   correccion de validacion y redireccion
             modificaciones  login.js        correccion de validacion y redireccion
             modificaciones  login.html      correccion input password
+            modificaciones  estiloHome      se agrego responsive para 300px
+            modificaciones  estiloHome      se agrego responsive para 2000px
+
 
 
 Carina      desarrollo      home.html
                             PeliSeleccionada.html
                             estiloHome.css
-            modificaciones  home.html       correccion de imagenes y estilos
+            modificaciones  home.html               correccion de imagenes y estilos
+            modificaciones  estiloHome.css          Se genero codigo responsive para pantallas de 600, 1080px
 
 javier      desarrollo      formulario.html
                             login.html
