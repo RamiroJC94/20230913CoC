@@ -649,4 +649,8 @@ header nav .btt-suscribe a:hover{
     body{
         min-width: 10px;
     }
+
+    .box .CardSub02{
+        left: 9% !important;
+    }
 }
