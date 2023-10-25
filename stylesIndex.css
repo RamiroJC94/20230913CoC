@@ -551,3 +551,102 @@ header nav .btt-suscribe a:hover{
     left: 24%; 
 }
 /* CARD */
+
+@media only screen and (max-width: 400px) {
+    .display{
+        height: 190px !important;
+    }
+    
+    .display img{
+        background-repeat: no-repeat;
+        width: 100vw;
+    }
+    header nav .btt-suscribe{
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .navContainer .loggin{
+        width: 80px;
+    }
+
+    nav .logotipo{
+        font-size: 20px;
+    }
+
+    .box{
+        left: 27%;
+        top: 17%
+    }
+
+    .CardSub02{
+        left: 8% !important;
+    }
+
+    .CardSubPrice002{
+        left: 15% !important;
+    }
+
+    .CardSubMes2{
+        left: 12% !important;
+    }
+
+    .box .btt-suscribe{
+        left: 5% !important;
+    }
+
+    .linesBoxLg{
+        width: 190px;
+        height: 125px;
+    }
+
+    .box .btt-suscribe{
+        top: 66% !important;
+    }
+
+    .box .CardSubMes2{
+        top: 58% !important;
+    }
+
+    .box .CardSubPrice002{
+        top: 36% !important;
+    }
+
+    .box .CardSub02{
+        top: 6% !important;
+    }
+
+    .promos {
+        top: 6% !important;
+    }
+
+    .promos .title{
+        text-shadow: 1px 1px 2px rgba(0,35,51,0.8);
+    }
+
+    .promos h5{
+        text-shadow: 1px 1px 2px rgba(0,35,51,0.9);
+    }
+
+    .container{
+        padding: 0;
+        left: 4% !important;
+        gap: 0px !important;
+        flex-direction: column;
+        width: 220px;
+        height: 500px !important;
+    }
+
+    .container .card{
+        width: 200px;
+        margin: 15px;
+    }
+
+    .container .especial{
+        left: -4px !important;
+    }
+
+    body{
+        min-width: 10px;
+    }
+}
